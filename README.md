@@ -9,6 +9,7 @@ Welcome to my portfolio! This website showcases my journey as a data scientist a
 
 Feel free to explore my projects, learn more about my background, and get in touch. You can view the website live at [Portfolio Link](https://kelly-li.netlify.app/). It's been hosted with care on Netlify.
 
-Cheers,
 
-Kelly c:
+*Cheers,
+
+Kelly c:*
