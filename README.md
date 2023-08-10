@@ -1,6 +1,6 @@
 # Kelly Li's Portfolio
 
-Welcome to my portfolio! This website showcases my journey as a data scientist and culinary enthusiast. I've crafted this site using a blend of technologies to create an engaging experience:
+Welcome to my portfolio! This website showcases my journey as a data scientist and culinary enthusiast. I've meticulously crafted this site's design using Figma, and brought it to life with a blend of technologies to create an engaging experience:
 
 - **CSS:** Styling is an art, and I've employed CSS to make every pixel shine.
 - **HTML:** The backbone of web content, I've woven HTML to structure my ideas.
@@ -9,6 +9,7 @@ Welcome to my portfolio! This website showcases my journey as a data scientist a
 
 Feel free to explore my projects, learn more about my background, and get in touch. You can view the website live at [Portfolio Link](https://kelly-li.netlify.app/). It's been hosted with care on Netlify.
 
+<br>
 
 *Cheers,*
 
