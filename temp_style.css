@@ -29,7 +29,7 @@ header {
 
 h2 {
     display: block;
-    font-size: 50px;
+    font-size: 24px;
     line-height: 30px;
     font-weight: 500;
     text-rendering: optimizeLegibility;
@@ -50,9 +50,9 @@ main {
 }
 
 footer {
-    background-color: rgba(138, 125, 94, 0.622);
+    background-color: #dad1b449;
     padding: 40px;
-    color: rgb(248, 248, 248);
+    color: #494e52;
     margin-top: 50px;
 }
 
@@ -62,9 +62,9 @@ footer {
     width: 500px;
   }
 
-a {
-    color:rgb(70, 103, 102);
-}
+/* a {
+    color: rgb(248, 248, 248);
+} */
 
 .quote {
     text-align: center;
@@ -94,19 +94,29 @@ a {
 
 .columns {
     display: flex;
-    width: 600px;
+    width: 40px;
     margin: 0 auto;
     justify-content: center;
 }
 
 .column {
     width: 50%;
-    padding: 10px 50px;
-    background-color: #d4dab449;
-    border-radius: 25px;
-    margin: 0 10px;
+    padding: 0 10px;
+    /* background-color: #d4dab449;
+    border-radius: 25px; */
+    margin: 5px;
     text-align: center;
 }
+
+/* .column img {
+    width: 40px;
+    height: 40px;
+} */
+
+svg {
+    fill: #494e52; /* Change the default fill color for all SVG elements */
+}
+
 
 /* input {
     box-sizing: border-box;
