@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelly Li's Portfolio</title>
     <link rel="stylesheet" href="temp_style.css">
+    <script src="smooth-scroll.js"></script>
+
 </head>
 
 <body>
@@ -25,21 +27,42 @@
     <main>
 
         <!-- Home Section -->
-        <section id="home">
-            <!-- Home content goes here -->
+        <section id="home" class="start">
+            <div class="image-container">
+                <img src="input/profile-pic.jpg" alt="Kelly Li's headshot">
+            </div>
         </section>
+
 
         <!-- About Section -->
         <section id="about">
-            <br><br>
-            <h2><br>ABOUT</h2>
-            <p>By day, I'm a data scientist, delving into the intricate world of data after a spell as a biotech whiz. Armed with a biotech degree, I've traded pipettes for Python, morphing into a data magician. Beyond my data-drenched pursuits, I'm on a mission to demystify open-source, engineer tech that empowers, and weave a close-knit community. With an insatiable hunger for learning, I'm always eager to expand my skill set and evolve as a person.<br></p>
-            <p>When I'm not lost in coding spells or culinary experiments (I whip up both algorithms and crème brûlée), I'm concocting ways to fuse data-driven insights with gastronomic delights. So, let's stir up a symphony of flavors and insights together!<br></p>
+            <h2>ABOUT</h2>
+            <p>By day, I'm a data scientist, delving into the intricate world of data after a spell as a biotech whiz. Armed with a biotech degree, I've traded pipettes for Python, morphing into a data magician. Beyond my data-drenched pursuits, I'm on a mission to demystify open-source, engineer tech that empowers, and weave a close-knit community. With an insatiable hunger for learning, I'm always eager to expand my skill set and evolve as a person.</p>
+            <p>When I'm not lost in coding spells or culinary experiments (I whip up both algorithms and crème brûlée), I'm concocting ways to fuse data-driven insights with gastronomic delights. So, let's stir up a symphony of flavors and insights together!</p>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
-            <!-- Projects content goes here -->
+            <h2>PROJECTS</h2>
+            
+            <h3 style = 'font-size: 30px';>Recipe Recommender</h3>
+            
+            <p>This project aims to create a personalized recipe recommendation system, catering to users' individual preferences and dietary needs. Leveraging advanced data science techniques like Word2Vec, Word Embeddings Neural Network, TF-IDF, and FunkSVD, the system provides users with enticing and relevant recipe suggestions, inspiring culinary creativity.</p>
+            
+            <p>Whether you're looking for a quick weeknight meal or aiming to impress with a gourmet creation, this Recipe Recommender is your sous chef in the digital world. Experience the ease of finding recipes that match your cravings and preferences like never before! Try it out <a href="https://kellyli-tastyfinds.streamlit.app/" target="_blank">here</a>, or navigate to the <a href="https://github.com/kli210/recipe_recommender_capstone" target="_blank">Git repo</a>!</p>
+            
+            <div id="header" align="center">
+                <img src="input/Tastyfinds.gif" alt="TastyFinds webapp">
+            </div>
+
+            <h3 style = 'font-size: 30px';><br><br> CovidVaxTracker</h3>
+
+            <p>The COVID-19 pandemic has prompted a global effort to develop and distribute vaccines to protect people against the virus. This visualization provides a comprehensive overview of the vaccination progress across the world by tracking the percentage of the population vaccinated in each country, along with other relevant data such as the number of doses administered, vaccine types, and the timeline of the vaccination campaign. This powerful visualization allows viewers to understand the global impact of the COVID-19 vaccine rollout and helps to identify the countries that are leading the way in vaccinating their populations. By presenting this data in an accessible and easy-to-understand format, this visualization can help to inform and inspire the public to take action and support the ongoing efforts to end the pandemic.</p>
+            <p>Check out the Git repo <a href="https://github.com/kli210/covid-vax-tracker" target="_blank">here</a>!</p>
+        
+            <div class='tableauPlaceholder' id='viz1692981278424' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID-19GlobalVaccineTracker_16923814781580&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='COVID-19GlobalVaccineTracker_16923814781580&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID-19GlobalVaccineTracker_16923814781580&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1692981278424');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='2227px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='2227px';} else { vizElement.style.width='100%';vizElement.style.height='2277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            
+            <p><br><br><strong> More projects underway...</strong></p>
         </section>
 
         <!-- CV Section -->
@@ -52,27 +75,6 @@
             <!-- Contact content goes here -->
         </section>
 
-        <br>
-        <h2>PROJECTS</h2>
-        <br>
-        <h3 style = 'font-size: 30px';>Recipe Recommender</h3>
-        
-        <p>This project aims to create a personalized recipe recommendation system, catering to users' individual preferences and dietary needs. Leveraging advanced data science techniques like Word2Vec, Word Embeddings Neural Network, TF-IDF, and FunkSVD, the system provides users with enticing and relevant recipe suggestions, inspiring culinary creativity.</p>
-        
-        <p>Whether you're looking for a quick weeknight meal or aiming to impress with a gourmet creation, this Recipe Recommender is your sous chef in the digital world. Experience the ease of finding recipes that match your cravings and preferences like never before! Try it out <a href="https://kellyli-tastyfinds.streamlit.app/" target="_blank">here</a>, or navigate to the <a href="https://github.com/kli210/recipe_recommender_capstone" target="_blank">Git repo</a>!</p>
-        
-        <div id="header" align="center">
-            <img src="input/Tastyfinds.gif" alt="TastyFinds webapp">
-        </div>
-
-        <h3 style = 'font-size: 30px';><br><br> CovidVaxTracker</h3>
-
-        <p>The COVID-19 pandemic has prompted a global effort to develop and distribute vaccines to protect people against the virus. This visualization provides a comprehensive overview of the vaccination progress across the world by tracking the percentage of the population vaccinated in each country, along with other relevant data such as the number of doses administered, vaccine types, and the timeline of the vaccination campaign. This powerful visualization allows viewers to understand the global impact of the COVID-19 vaccine rollout and helps to identify the countries that are leading the way in vaccinating their populations. By presenting this data in an accessible and easy-to-understand format, this visualization can help to inform and inspire the public to take action and support the ongoing efforts to end the pandemic.</p>
-        <p>Check out the Git repo <a href="https://github.com/kli210/covid-vax-tracker" target="_blank">here</a>!</p>
-    
-        <div class='tableauPlaceholder' id='viz1692981278424' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID-19GlobalVaccineTracker_16923814781580&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='COVID-19GlobalVaccineTracker_16923814781580&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COVID-19GlobalVaccineTracker_16923814781580&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1692981278424');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='2227px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='2227px';} else { vizElement.style.width='100%';vizElement.style.height='2277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-        
-        <p><br><br><strong> More projects underway...</strong></p>
 
     </main>
 
@@ -122,4 +124,5 @@
     </footer>
 
 </body>
+<script src="smooth-scroll.js"></script>
 </html>

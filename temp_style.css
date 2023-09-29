@@ -117,6 +117,34 @@ svg {
     fill: #494e52; /* Change the default fill color for all SVG elements */
 }
 
+/* Center-align the content within the section */
+section {
+    padding: 80px 0; /* Add some padding for spacing */
+}
+
+.start {
+    padding: 0 0 80px 0;
+}
+
+/* Center-align the image */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Set the desired height for the container */
+    overflow: hidden;
+    border-radius: 100%; /* Round the corners */
+    margin: 0 auto; /* Center the container horizontally */
+    width: 300px; /* Set the desired width for the container */
+}
+
+/* Style the image within the container */
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 100%; /* Round the corners of the image */
+}
+
 
 /* Sticky Menu Bar Styles */
 .menu-bar {
