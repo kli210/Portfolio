@@ -125,7 +125,7 @@ section {
 /* Align the image to the right */
 .image-container {
     float: right; /* Float the container to the right */
-    margin-right: 150px; /* Add a right margin for spacing */
+    margin: 0 150px 0 50px; /* Add a right margin for spacing */
     width: 300px; /* Set the desired width for the container */
 }
 
