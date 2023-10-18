@@ -1,5 +1,6 @@
 body {
     color: #494e52;
+    background-color: #fcfaf3;
     fill: currentcolor;
     line-height: 1.5;
     font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
@@ -76,11 +77,10 @@ footer {
 }
 
 .homepage {
-    background-color: #b4d2da49;
-    padding: 10px 50px;
-    border-radius: 25px;
-    margin: 0 auto;
-    text-align: center;
+    color: #494e52e7;
+    margin: 60px auto;
+    padding: 0 0 10px 200px;
+    text-align: left;
 }
 
 .links {
@@ -122,22 +122,40 @@ section {
     padding: 80px 0; /* Add some padding for spacing */
 }
 
-/* Center-align the image */
+/* Align the image to the right */
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 100%; /* Round the corners */
-    margin: 0 auto; /* Center the container horizontally */
+    float: right; /* Float the container to the right */
+    margin-right: 150px; /* Add a right margin for spacing */
     width: 300px; /* Set the desired width for the container */
 }
+
 
 /* Style the image within the container */
 .image-container img {
     max-width: 115%;
     max-height: 100%;
-    border-radius: 100%; /* Round the corners of the image */
+    border-radius: 45%; /* Round the corners of the image */
+}
+
+/* Add a double-bordered minimalistic frame to the image */
+.minimalistic-frame {
+    border: 2px solid #b9c1c7e7; /* Outer border color and thickness */
+    border-radius: 145px; /* Create rounded corners */
+    padding: 5px 15px; /* Add padding for spacing */
+    
+    /* Add an inner border */
+    position: relative;
+}
+
+.minimalistic-frame::before {
+    content: "";
+    position: absolute;
+    top: 2px; /* Adjust the top position for the inner border */
+    right: -15px; /* Adjust the right position for the inner border */
+    bottom: -8px; /* Adjust the bottom position for the inner border */
+    left: 5px; /* Adjust the left position for the inner border */
+    border: 2px solid #e1dcc5; /* Inner border color and thickness */
+    border-radius: 130px; /* Inner border rounded corners */
 }
 
 
@@ -145,20 +163,13 @@ section {
 .menu-bar {
     position: sticky;
     top: 0;
-    background-color: #f3efdf;
+    background-color: #f3eddf;
     z-index: 100;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center; /* Vertically align items */
-    padding: 10px 20px; 
+    padding: 20px 20px; 
     height: 80px;
-}
-
-.branding {
-    color: #63696e;
-    font-size: 30px; 
-    font-weight: 600;
-    padding: 0 30px;
 }
 
 .menu-bar ul {
@@ -170,7 +181,7 @@ section {
 
 .menu-bar li {
     float: right;
-    padding: 10px 20px; 
+    padding: 10px 30px; 
 }
 
 .menu-bar a {
