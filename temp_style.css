@@ -178,10 +178,18 @@ section {
     background-color: #f3eddf;
     z-index: 100;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center; /* Vertically align items */
     padding: 20px 20px; 
     height: 80px;
+}
+
+.branding {
+    color: #494e52;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .menu-bar ul {
