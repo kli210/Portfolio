@@ -158,6 +158,18 @@ section {
     border-radius: 130px; /* Inner border rounded corners */
 }
 
+/* Initially hide the text elements */
+.animated-text {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Animation for the 'show' class */
+.animated-text.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out; /* Adjust animation duration and easing */
+}
 
 /* Sticky Menu Bar Styles */
 .menu-bar {
