@@ -9,11 +9,13 @@
     <!-- Favicon -->
     <link href="input/webicon.png" rel="icon">
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="temp_style.css">
 
+    <!-- JavaScript -->
     <script src="JS/smooth-scroll.js"></script>
     <script src="JS/text-fade-in.js"></script>
-
+    <script src="JS/contact-from.js"></script>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
     <div class="menu-bar">
         <div class="branding">KL.</div>
         <ul>
-            <!-- <li><a href="#contact">CONTACT</a></li> -->
+            <li><a href="#contact">CONTACT</a></li>
             <!-- <li><a href="#cv">CV</a></li> -->
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#about">ABOUT</a></li>
@@ -122,9 +124,41 @@
         <!-- </section> -->
 
         <!-- Contact Section -->
-        <!-- <section id="contact"> -->
-            <!-- Contact content goes here -->
-        <!-- </section> -->
+        <section id="contact">
+            <h3 style="font-size: 50px;">Message in a Bottle</h3>
+
+            <!-- Contact Form -->
+            <form id="contact-form">
+                <!-- Name Input -->
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Email Input -->
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Phone Input -->
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <!-- Message Textarea -->
+                <div>
+                    <label for="message">Type your message here:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+
+        </section>
+
 
 
     </main>
@@ -174,7 +208,8 @@
         
     </footer>
 
-</body>
 <script src="JS/smooth-scroll.js"></script>
 <script src="JS/text-fade-in.js"></script>
+<script src="JS/contact-form.js"></script>
+</body>
 </html>
