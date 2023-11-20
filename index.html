@@ -16,6 +16,28 @@
     <script src="JS/smooth-scroll.js"></script>
     <script src="JS/text-fade-in.js"></script>
     <script src="JS/contact-form.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('4_gddovEqULo4_E9u');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_2ztvelc', 'template_b3jc5eb', '#contact-form')
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -146,7 +168,7 @@
                     <!-- Message Textarea -->
                     <div>
                         <label for="message">Type your message here:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
 
                     <!-- Submit Button -->
@@ -211,8 +233,8 @@
         
     </footer>
 
-<script src="JS/smooth-scroll.js"></script>
-<script src="JS/text-fade-in.js"></script>
-<script src="JS/contact-form.js"></script>
+    <script src="JS/smooth-scroll.js"></script>
+    <script src="JS/text-fade-in.js"></script>
+    <script src="JS/contact-form.js"></script>
 </body>
 </html>
